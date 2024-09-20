@@ -10,24 +10,27 @@ export const SecondComponent = () => {
         "Harry potter y la reliquias de la muerte"
     ];
 
-    const listBook = [];
-    books.forEach((book,index)=>{
-        listBook.push(<li key={ index }> { book }</li>)
-    })
+    // Evaluar una condicion ? (parte verdadera) : parte del false
+    // condicion ? (verdadero) : (falso)
 
     return (
         <>
             <h1>SecondComponent</h1>
             <div>
                 <ul>
-                    {
-                        books.map((book, index) =>{
-                            return <li key = { index }> { book }</li>
-                        })
-                    }
+                    {books.length >= 1 ?
+                        (
+                            books.map((book, index) => {
+                                return <li key={index}> {book}</li>
+                            })
+                        )
+                        :
+                        (
+                        <p>No existen libros</p>
+                        )
+                        }
                 </ul>
                 <ul>
-                    { listBook }
                 </ul>
             </div>
         </>
