@@ -70,8 +70,9 @@
   align-items: center;
 }
 
-.white-hr{
-  height: 2px;
+.white-hr {
+  height: 20px;
+  width: 60%;
   background-color: white;
   margin: 20px 0;
 }

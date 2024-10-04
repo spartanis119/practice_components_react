@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import './App.css'
 import { Child } from './components/Child';
-import { FirstComponent } from './components/FirstComponent'
-import { SecondComponent } from './components/SecondComponent'
-import { ThirdComponent } from './components/ThirdComponent'
+import { FourthComponent } from './components/FourthComponent';
+// import { FirstComponent } from './components/FirstComponent'
+// import { SecondComponent } from './components/SecondComponent'
+// import { ThirdComponent } from './components/ThirdComponent'
 
 
 function App() {
@@ -12,15 +13,11 @@ function App() {
     <>
       <div className='App'>
         <header className='App-header'>
-          <h1>Fundamentos de React</h1>
           <hr className='white-hr'/>
-          <FirstComponent />
+          <FourthComponent />
           <hr className='white-hr'/>
-          <SecondComponent />
-          <hr />
-          <ThirdComponent  name="Juan" lastname="Camargo" age="15"/>
-          <hr />
           <Child name = {name} setName={setName}/>
+          <hr />
         </header>
       </div>
     </>
